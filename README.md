@@ -36,6 +36,12 @@ Jinja2 --> Dynamic HTML rendering
 
 ---
 
+🖥️ Output
+
+<img width="1470" height="864" alt="Screenshot 2026-09-11 at 1 17 45 AM" src="https://github.com/user-attachments/assets/58bf0a0b-86ef-43ec-9acd-d863ddd2c509" />
+
+---
+
 👩‍💻 Author
 
 Heer Somaiya
