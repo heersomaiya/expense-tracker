@@ -44,16 +44,14 @@ def add_expense():
         "date" : date
     }
 
-    expenses.insert_one(expense)
+    expenses.insert_one(expense) #insert query
 
     return redirect('/')
 
 @app.route("/delete/<id>")
 def delete_expense(id):
 
-    expenses.delete_one(
-        {"_id" : ObjectId(id)}
-    )
+    expenses.delete_one({"_id" : ObjectId(id)}) #delete query
 
     return redirect('/')
 
@@ -75,11 +73,11 @@ def edit_expense(id):
                 "description": description,
                 "date": date
             }}
-        )
+        ) #update query
 
         return redirect('/')
 
-    expense = expenses.find_one({"_id": ObjectId(id)})
+    expense = expenses.find_one({"_id": ObjectId(id)}) #find query
 
     return render_template('edit.html', expense=expense)
 
